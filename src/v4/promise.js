@@ -3,7 +3,8 @@
  */
 
 var p1 = new Promise(function(resolve, reject) {
-    resolve(1);
+    //resolve(1);
+    reject(new Error('test'));
 });
 
 p1.then(function(value) {

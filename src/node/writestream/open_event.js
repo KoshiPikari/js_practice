@@ -11,16 +11,16 @@ var ws1 = fs.createWriteStream('./output1.txt', {encoding: 'utf8'});
 var ws2 = fs.createWriteStream('./output2.txt', {encoding: 'utf8'});
 
 ws1.on('open', function(fd) {
-    console.log('open ws', fd);
+    console.log('open ws. fd:', fd);
 });
 ws2.on('open', function(fd) {
-    console.log('open ws2', fd);
+    console.log('open ws2, fd:', fd);
 });
 
-for (var i=0; i<1000; i++) {
+for (var i=0; i<100; i++) {
     ws1.write(String(i));
 }
-for (var i=0; i<1000; i++) {
+for (var i=0; i<100; i++) {
     ws2.write(String(i));
 }
 

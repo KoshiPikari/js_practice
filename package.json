@@ -5,6 +5,8 @@
     "async": "0.2.9",
     "socket.io": "*",
     "glob": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "lodash": "*",
+    "co": "*"
   }
 }

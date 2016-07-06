@@ -12,8 +12,8 @@ ws.on('open', function(fd) {
 ws.on('drain', function() {
     console.log('drain');
 });
-for (var i=0; i<100000; i++) {
+for (var i=0; i<100; i++) {
     ws.write(String(i));
 }
 
-ws.end();
+//ws.end();
